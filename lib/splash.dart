@@ -99,6 +99,14 @@ class _SplashScreenState extends State<SplashScreen> {
             margin: EdgeInsets.only(bottom: 60.0, top: 60.0),
             child: ListView(
               children: <Widget>[
+                Padding(
+                  padding:
+                      EdgeInsets.all(MediaQuery.of(context).size.height * 0.04),
+                  child: Image.asset(
+                    'assets/photos/Group 14.png',
+                    height: MediaQuery.of(context).size.height * 0.06,
+                  ),
+                ),
                 GestureDetector(
                     child: Image.asset(
                   currentSlide.pathImage,
