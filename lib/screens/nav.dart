@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
+import 'package:niyamo/screens/hacks.dart';
 import 'package:niyamo/screens/homey.dart';
+import 'package:niyamo/screens/rant.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,6 +12,67 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int bottomSelectedIndex = 0;
+
+  List<BottomNavigationBarItem> buildBottomNavBarItems() {
+    return [
+      BottomNavigationBarItem(
+          icon: Icon(
+            LineIcons.home,
+            color: Colors.black54,
+          ),
+          label: 'Home'),
+      BottomNavigationBarItem(
+        icon: Icon(
+          LineIcons.leaf,
+          color: Colors.black54,
+        ),
+        label: 'Tracker',
+      ),
+      BottomNavigationBarItem(
+          icon: Icon(
+            LineIcons.user,
+            color: Colors.black54,
+          ),
+          label: 'Profile')
+    ];
+  }
+
+  PageController pageController = PageController(
+    initialPage: 0,
+    keepPage: true,
+  );
+
+  Widget buildPageView() {
+    return PageView(
+      physics: NeverScrollableScrollPhysics(),
+      controller: pageController,
+      onPageChanged: (index) {
+        pageChanged(index);
+      },
+      children: <Widget>[Homey(), Hacks(), Rant()],
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  void pageChanged(int index) {
+    setState(() {
+      bottomSelectedIndex = index;
+    });
+  }
+
+  void bottomTapped(int index) {
+    setState(() {
+      bottomSelectedIndex = index;
+      pageController.animateToPage(index,
+          duration: Duration(milliseconds: 500), curve: Curves.ease);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +90,17 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: AppTheme.offWhite,
         elevation: 0,
       ),
-      body: Homey(),
+      body: buildPageView(),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.cyan,
+        selectedIconTheme: IconThemeData(color: Colors.black, size: 30),
+        unselectedItemColor: Colors.black54,
+        currentIndex: bottomSelectedIndex,
+        onTap: (index) {
+          bottomTapped(index);
+        },
+        items: buildBottomNavBarItems(),
+      ),
     );
   }
 }
