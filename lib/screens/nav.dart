@@ -24,17 +24,17 @@ class _HomePageState extends State<HomePage> {
           label: 'Home'),
       BottomNavigationBarItem(
         icon: Icon(
-          LineIcons.leaf,
+          LineIcons.sun_o,
           color: Colors.black54,
         ),
         label: 'Tracker',
       ),
       BottomNavigationBarItem(
           icon: Icon(
-            LineIcons.user,
+            LineIcons.hourglass_end,
             color: Colors.black54,
           ),
-          label: 'Profile')
+          label: 'Rant')
     ];
   }
 
