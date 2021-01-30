@@ -72,7 +72,7 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: fonts/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
           
     
   #

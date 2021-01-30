@@ -14,6 +14,7 @@ class _NiyamoState extends State<Niyamo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'Poppins'),
       initialRoute: '/',
       routes: {
         '/': (context) => SplashScreen(),

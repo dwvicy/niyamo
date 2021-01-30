@@ -4,6 +4,8 @@ import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 import 'package:intro_slider/dot_animation_enum.dart';
 
+import 'constants/AppTheme.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -22,33 +24,33 @@ class _SplashScreenState extends State<SplashScreen> {
       new Slide(
         title: "Self-care 'o' clock",
         styleTitle: TextStyle(
-          color: Colors.black54,
+          color: AppTheme.ellowPinky,
           fontSize: 30.0,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w900,
         ),
-        pathImage: "https://i.imgur.com/B5fctzw.png",
+        pathImage: "assets/photos/5 2.png",
       ),
     );
     slides.add(
       new Slide(
         title: "Be mindful of your lifestyle",
         styleTitle: TextStyle(
-          color: Colors.black54,
+          color: AppTheme.ellowPinky,
           fontSize: 30.0,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w900,
         ),
-        pathImage: "https://i.imgur.com/K6n9MiK.jpg",
+        pathImage: "assets/photos/6 2.png",
       ),
     );
     slides.add(
       new Slide(
         title: "Rant it all out",
         styleTitle: TextStyle(
-          color: Colors.black54,
+          color: AppTheme.ellowPinky,
           fontSize: 30.0,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w900,
         ),
-        pathImage: "https://i.imgur.com/nhEyJ6x.png",
+        pathImage: "assets/photos/7 2.png",
       ),
     );
   }
@@ -135,7 +137,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
       // Skip button
       renderSkipBtn: this.renderSkipBtn(),
-      colorSkipBtn: Colors.black54,
+      colorSkipBtn: AppTheme.ellowPinky,
       highlightColorSkipBtn: Colors.black,
 
       // Next button
@@ -144,11 +146,11 @@ class _SplashScreenState extends State<SplashScreen> {
       // Done button
       renderDoneBtn: this.renderDoneBtn(),
       onDonePress: this.onDonePress,
-      colorDoneBtn: Colors.black54,
+      colorDoneBtn: AppTheme.ellowPinky,
       highlightColorDoneBtn: Colors.black,
 
       // Dot indicator
-      colorDot: Colors.black54,
+      colorDot: AppTheme.ellowPinky,
       sizeDot: 13.0,
       typeDotAnimation: dotSliderAnimation.DOT_MOVEMENT,
 
