@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:niyamo/constants/AppTheme.dart';
+import 'package:niyamo/screens/homey.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -25,6 +26,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: AppTheme.offWhite,
         elevation: 0,
       ),
+      body: Homey(),
     );
   }
 }
