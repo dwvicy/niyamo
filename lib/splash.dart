@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void onDonePress() {
     // Back to the first tab
-    Navigator.of(context).pushNamed('/');
+    Navigator.of(context).pushNamed('/home');
   }
 
   void onTabChangeCompleted(index) {
@@ -67,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget renderNextBtn() {
     return Icon(
       Icons.navigate_next,
-      color: Colors.white,
+      color: AppTheme.offWhite,
       size: 35.0,
     );
   }
@@ -75,14 +75,14 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget renderDoneBtn() {
     return Icon(
       Icons.done,
-      color: Colors.white,
+      color: AppTheme.offWhite,
     );
   }
 
   Widget renderSkipBtn() {
     return Icon(
       Icons.skip_next,
-      color: Colors.white,
+      color: AppTheme.offWhite,
     );
   }
 
@@ -164,7 +164,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
       // Tabs
       listCustomTabs: this.renderListCustomTabs(),
-      backgroundColorAllSlides: Colors.white,
+      backgroundColorAllSlides: AppTheme.offWhite,
       refFuncGoToTab: (refFunc) {
         this.goToTab = refFunc;
       },

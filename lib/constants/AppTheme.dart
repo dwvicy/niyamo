@@ -4,7 +4,7 @@ class AppTheme {
   static const Color lightYellow = Color(0xFFFFE18E);
   static const Color ellowPinky = Color(0xFFFC5866);
   static const Color pinky = Color(0xFFFC588A);
-  static const Color gray = Color(0xFF6F6F6F);
+  static const Color offWhite = Color(0xFFE4E2DD);
   static const Color lightGreen = Color(0xFFDFF8D4);
   static const Color green = Color(0xFF94E870);
 }
@@ -24,7 +24,7 @@ class Style {
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
     fontSize: 15,
-    color: AppTheme.gray,
+    color: Colors.black54,
   );
   static const TextStyle productPrice = TextStyle(
     fontFamily: 'Poppins',
