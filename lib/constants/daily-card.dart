@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:niyamo/constants/AppTheme.dart';
 
 class DailyCard extends StatefulWidget {
   final String title;

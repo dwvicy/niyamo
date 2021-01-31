@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:niyamo/constants/AppTheme.dart';
+
 import 'package:niyamo/constants/carouselz.dart';
 import 'package:niyamo/constants/daily-feed.dart';
 import 'package:niyamo/constants/routine-date.dart';
-import 'package:niyamo/constants/routine-list.dart';
 
 class Homey extends StatefulWidget {
   @override

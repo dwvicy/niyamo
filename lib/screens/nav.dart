@@ -4,7 +4,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
 import 'package:niyamo/screens/hacks.dart';
 import 'package:niyamo/screens/homey.dart';
-import 'package:niyamo/screens/my-routine.dart';
+
 import 'package:niyamo/screens/rant.dart';
 
 class HomePage extends StatefulWidget {
