@@ -2,6 +2,8 @@
 
 An app for women in tech to overcome imposter syndrome and adopt a healthier lifestyle.
 
+[Link to app demo](https://youtu.be/nmhwWVbp_7M)
+
 HackViolet Hack
 
 ## What is imposter syndrome?
