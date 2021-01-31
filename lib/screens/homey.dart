@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:niyamo/constants/AppTheme.dart';
 import 'package:niyamo/constants/carouselz.dart';
+import 'package:niyamo/constants/daily-feed.dart';
 import 'package:niyamo/constants/routine-date.dart';
 import 'package:niyamo/constants/routine-list.dart';
 
@@ -41,7 +42,14 @@ class _HomeyState extends State<Homey> {
         ),
       ),
       // Expanded(child: RoutineList())
-      RoutineDate()
+      RoutineDate(),
+      Padding(
+        padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.height * 0.46,
+            right: MediaQuery.of(context).size.width * 0.05,
+            left: MediaQuery.of(context).size.width * 0.05),
+        child: DailyFeed(),
+      ),
     ]));
   }
 }
