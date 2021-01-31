@@ -4,6 +4,9 @@ import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
 
 class RoutineCard extends StatefulWidget {
+  final String title;
+
+  RoutineCard({this.title});
   @override
   _RoutineCardState createState() => _RoutineCardState();
 }
@@ -23,8 +26,8 @@ class _RoutineCardState extends State<RoutineCard> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'meditation',
-                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                widget.title,
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
               ),
             ),
             Positioned(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:niyamo/constants/AppTheme.dart';
+import 'package:niyamo/constants/assertiveness-list.dart';
 import 'package:niyamo/constants/routine-list.dart';
 
 class Hacks extends StatefulWidget {
@@ -73,15 +74,7 @@ class _HacksState extends State<Hacks> {
             ),
             child: Container(
                 height: MediaQuery.of(context).size.height * 0.25,
-                child: RoutineList()),
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-              top: MediaQuery.of(context).size.height * 0.05,
-            ),
-            child: Container(
-                height: MediaQuery.of(context).size.height * 0.25,
-                child: RoutineList()),
+                child: AssertList()),
           ),
           Row(children: [
             Padding(
@@ -109,7 +102,7 @@ class _HacksState extends State<Hacks> {
             ),
             child: Container(
                 height: MediaQuery.of(context).size.height * 0.25,
-                child: RoutineList()),
+                child: AssertList()),
           ),
         ]),
       ),

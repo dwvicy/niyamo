@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:niyamo/constants/routine-card.dart';
 
-class RoutineList extends StatefulWidget {
+class AssertList extends StatefulWidget {
   @override
-  _RoutineListState createState() => _RoutineListState();
+  _AssertListState createState() => _AssertListState();
 }
 
 List<String> names = [
-  '5 mins of mindfulness meditation',
-  '30 mins of running',
-  '10 Suryanamaskars',
-  '8 glasses of water intake daily',
-  'No phone usage for 1 hour before sleeping'
+  'Eradicate your nervousness with physical activity',
+  'Try to rephrase negative sentences',
+  'Life is 10% events and 90% our reactions towards those events',
+  'Don\'t be passive aggressive, be assertive',
+  'If you can\'t be assertive, make sure you value your time'
 ];
 
-class _RoutineListState extends State<RoutineList> {
+class _AssertListState extends State<AssertList> {
   @override
   Widget build(BuildContext context) {
     return Container(
