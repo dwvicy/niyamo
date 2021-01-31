@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
     slides.add(
       new Slide(
-        title: "Be mindful of your lifestyle",
+        title: "Learn to be assertive",
         styleTitle: TextStyle(
           color: AppTheme.ellowPinky,
           fontSize: 30.0,
@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
     slides.add(
       new Slide(
-        title: "Rant it all out",
+        title: "Overcome Imposter Syndrome",
         styleTitle: TextStyle(
           color: AppTheme.ellowPinky,
           fontSize: 30.0,
