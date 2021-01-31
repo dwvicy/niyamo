@@ -18,14 +18,14 @@ class _DailyCardState extends State<DailyCard> {
       padding: const EdgeInsets.all(5.0),
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.black26, borderRadius: BorderRadius.circular(10)),
+            color: Colors.cyan[400], borderRadius: BorderRadius.circular(10)),
         child: ListTile(
           leading: Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
               icon: Icon(
                 LineIcons.leaf,
-                color: Colors.white,
+                color: Colors.black54,
               ),
               onPressed: () {},
             ),
@@ -33,11 +33,12 @@ class _DailyCardState extends State<DailyCard> {
           contentPadding: EdgeInsets.all(2),
           title: Text(
             'Plant a tree',
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style:
+                TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
           ),
           subtitle: Text(
             'A tree a day keeps climate change awayat bay',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black54),
             overflow: TextOverflow.ellipsis,
           ),
         ),

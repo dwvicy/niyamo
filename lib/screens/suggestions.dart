@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:niyamo/constants/AppTheme.dart';
 
 class SuggestPage extends StatefulWidget {
   @override
@@ -8,8 +9,17 @@ class SuggestPage extends StatefulWidget {
 class _SuggestPageState extends State<SuggestPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blueGrey[400],
+    return Scaffold(
+      backgroundColor: AppTheme.offWhite,
+      appBar: AppBar(
+        backgroundColor: AppTheme.offWhite,
+        elevation: 0,
+        title: Text(
+          'empower',
+          style: TextStyle(
+              color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 25),
+        ),
+      ),
     );
   }
 }
