@@ -21,20 +21,20 @@ class _HomePageState extends State<HomePage> {
             LineIcons.home,
             color: Colors.black54,
           ),
-          label: 'Home'),
+          label: 'home'),
       BottomNavigationBarItem(
         icon: Icon(
           LineIcons.sun_o,
           color: Colors.black54,
         ),
-        label: 'Tracker',
+        label: 'routine',
       ),
       BottomNavigationBarItem(
           icon: Icon(
             LineIcons.hourglass_end,
             color: Colors.black54,
           ),
-          label: 'Rant')
+          label: 'rant')
     ];
   }
 
@@ -78,6 +78,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: AppTheme.offWhite,
       appBar: AppBar(
+        leading: Container(),
         title: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(

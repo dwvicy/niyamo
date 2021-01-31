@@ -22,7 +22,7 @@ class _RoutineListState extends State<RoutineList> {
                   },
                   child: Container(
                     width: MediaQuery.of(context).size.width * 0.35,
-                    child: Text('this.routine'),
+                    child: Center(child: Text('this.routine')),
                     decoration: BoxDecoration(
                         color: Colors.orangeAccent[200].withOpacity(0.6),
                         borderRadius: BorderRadius.circular(10)),

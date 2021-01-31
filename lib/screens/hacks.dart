@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:niyamo/constants/AppTheme.dart';
+import 'package:niyamo/constants/routine-list.dart';
 
 class Hacks extends StatefulWidget {
   @override
@@ -9,7 +11,67 @@ class _HacksState extends State<Hacks> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: AppTheme.offWhite,
+      body: Stack(children: [
+        Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.01,
+                  left: MediaQuery.of(context).size.width * 0.02),
+              child: Text(
+                'mental health',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.015,
+                  left: MediaQuery.of(context).size.width * 0.02),
+              child: Text(
+                'see more>',
+                style: TextStyle(decoration: TextDecoration.underline),
+              ),
+            ),
+          ],
+        ),
+        Padding(
+          padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.height * 0.05,
+          ),
+          child: Container(
+              height: MediaQuery.of(context).size.height * 0.25,
+              child: RoutineList()),
+        ),
+        Row(children: [
+          Padding(
+            padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.31,
+                left: MediaQuery.of(context).size.width * 0.02),
+            child: Text(
+              'self-care hacks',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.31,
+                left: MediaQuery.of(context).size.width * 0.02),
+            child: Text(
+              'see more>',
+              style: TextStyle(decoration: TextDecoration.underline),
+            ),
+          ),
+        ]),
+        Padding(
+          padding: EdgeInsets.only(
+            top: MediaQuery.of(context).size.height * 0.35,
+          ),
+          child: Container(
+              height: MediaQuery.of(context).size.height * 0.25,
+              child: RoutineList()),
+        ),
+      ]),
     );
   }
 }
