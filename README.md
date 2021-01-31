@@ -5,7 +5,7 @@ HackViolet Hack
 ## What is imposter syndrome?
 Imposter syndrome (IS) is the “false and sometimes crippling belief that one’s successes are the product of luck or fraud rather than skill. Individuals who experience it may feel self-doubt and a lack of confidence in their own abilities.Interestingly, even people who are high achievers and extremely successful often fall victim to these feelings.
 
-##How to know if I am suffering from it?
+## How to know if I am suffering from it?
 Characteristics of Imposter Syndrome - 
 -Self-doubt
 -An inability to realistically assess your competence and skills
@@ -25,7 +25,7 @@ A new beginning in some phase of life is usually underlined with a slight hint o
 Impostor syndrome and social anxiety may overlap. A person with social anxiety disorder (SAD) may feel as though they don't belong in social or performance situations.
 While the symptoms of social anxiety can fuel feelings of imposter syndrome, this does not mean that everyone with imposter syndrome has social anxiety or vice versa. People without social anxiety can also feel a lack of confidence and competence. Imposter syndrome often causes normally non-anxious people to experience a sense of anxiety when they are in situations where they feel inadequate.
 
-##Maybe I am the only one having all this in my head?
+## Maybe I am the only one having all this in my head?
 No,you aren't.
 Types of people exhibiting the Syndrome:
 Imposter syndrome can appear in a number of different ways.
