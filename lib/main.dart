@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:niyamo/constants/AppTheme.dart';
+import 'package:niyamo/screens/brag-sheet.dart';
 import 'package:niyamo/screens/nav.dart';
+import 'package:niyamo/screens/suggestions.dart';
 import 'package:niyamo/splash.dart';
 
 void main() {
@@ -27,7 +29,9 @@ class _NiyamoState extends State<Niyamo> {
       initialRoute: '/',
       routes: {
         '/': (context) => SplashScreen(),
-        '/home': (context) => HomePage()
+        '/home': (context) => HomePage(),
+        '/brag': (context) => BragSheet(),
+        '/suggest': (context) => SuggestPage()
       },
     );
   }
