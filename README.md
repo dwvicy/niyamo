@@ -1,5 +1,7 @@
 # niyamo
 
+An app for women in tech to overcome imposter syndrome and adopt a healthier lifestyle.
+
 HackViolet Hack
 
 ## What is imposter syndrome?
