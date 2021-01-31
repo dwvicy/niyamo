@@ -4,6 +4,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
 import 'package:niyamo/screens/hacks.dart';
 import 'package:niyamo/screens/homey.dart';
+import 'package:niyamo/screens/my-routine.dart';
 import 'package:niyamo/screens/rant.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
             LineIcons.hourglass_end,
             color: Colors.black54,
           ),
-          label: 'rant')
+          label: 'rant'),
     ];
   }
 
@@ -94,9 +95,12 @@ class _HomePageState extends State<HomePage> {
       body: buildPageView(),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.cyan,
-        selectedIconTheme: IconThemeData(color: Colors.black, size: 30),
+        selectedIconTheme: IconThemeData(color: Colors.black, size: 35),
+        selectedLabelStyle:
+            TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         unselectedItemColor: Colors.black54,
         currentIndex: bottomSelectedIndex,
+        backgroundColor: AppTheme.offWhite,
         onTap: (index) {
           bottomTapped(index);
         },
