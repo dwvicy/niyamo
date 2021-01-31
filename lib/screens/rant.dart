@@ -45,11 +45,11 @@ class _RantState extends State<Rant> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Write it out',
+                        'Text woth niyamo\nfor advice',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 25),
+                            fontSize: 20),
                       ),
                     ),
                   ],
@@ -75,11 +75,11 @@ class _RantState extends State<Rant> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Say it out loud',
+                        'Say it out loud\nin confidence',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 25),
+                            fontSize: 20),
                       ),
                     ),
                   ],
