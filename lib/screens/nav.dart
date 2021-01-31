@@ -24,18 +24,18 @@ class _HomePageState extends State<HomePage> {
           ),
           label: 'home'),
       BottomNavigationBarItem(
+          icon: Icon(
+            LineIcons.hourglass_end,
+            color: Colors.black54,
+          ),
+          label: 'rant'),
+      BottomNavigationBarItem(
         icon: Icon(
           LineIcons.sun_o,
           color: Colors.black54,
         ),
         label: 'routine',
       ),
-      BottomNavigationBarItem(
-          icon: Icon(
-            LineIcons.hourglass_end,
-            color: Colors.black54,
-          ),
-          label: 'rant'),
     ];
   }
 
@@ -51,7 +51,11 @@ class _HomePageState extends State<HomePage> {
       onPageChanged: (index) {
         pageChanged(index);
       },
-      children: <Widget>[Homey(), Hacks(), Rant()],
+      children: <Widget>[
+        Homey(),
+        Rant(),
+        Hacks(),
+      ],
     );
   }
 
