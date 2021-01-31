@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
-import 'package:niyamo/screens/placeholder.dart';
+
 import 'package:sentiment_dart/sentiment_dart.dart';
 
 class BragSheet extends StatefulWidget {
