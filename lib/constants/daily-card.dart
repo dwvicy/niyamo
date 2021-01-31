@@ -3,9 +3,10 @@ import 'package:line_icons/line_icons.dart';
 import 'package:niyamo/constants/AppTheme.dart';
 
 class DailyCard extends StatefulWidget {
-  const DailyCard({
-    Key key,
-  }) : super(key: key);
+  final String title;
+  final String subtitle;
+
+  const DailyCard({Key key, this.title, this.subtitle}) : super(key: key);
 
   @override
   _DailyCardState createState() => _DailyCardState();
@@ -20,26 +21,28 @@ class _DailyCardState extends State<DailyCard> {
         decoration: BoxDecoration(
             color: Colors.cyan[400], borderRadius: BorderRadius.circular(10)),
         child: ListTile(
-          leading: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: IconButton(
-              icon: Icon(
-                LineIcons.leaf,
-                color: Colors.black54,
-              ),
-              onPressed: () {},
+          leading: IconButton(
+            icon: Icon(
+              LineIcons.star,
+              color: Colors.black54,
+            ),
+            onPressed: () {},
+          ),
+          title: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(
+              widget.title,
+              style:
+                  TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
             ),
           ),
-          contentPadding: EdgeInsets.all(2),
-          title: Text(
-            'Plant a tree',
-            style:
-                TextStyle(color: Colors.black54, fontWeight: FontWeight.bold),
-          ),
-          subtitle: Text(
-            'A tree a day keeps climate change awayat bay',
-            style: TextStyle(color: Colors.black54),
-            overflow: TextOverflow.ellipsis,
+          subtitle: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(
+              widget.subtitle,
+              style: TextStyle(color: Colors.black54),
+              overflow: TextOverflow.ellipsis,
+            ),
           ),
         ),
       ),
