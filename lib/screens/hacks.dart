@@ -21,7 +21,10 @@ class _HacksState extends State<Hacks> {
                   left: MediaQuery.of(context).size.width * 0.02),
               child: Text(
                 'mental health',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             Padding(

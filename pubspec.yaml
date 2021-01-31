@@ -25,6 +25,7 @@ dependencies:
   line_icons: ^0.2.0
   intl: ^0.16.1
   flutter_dialogflow: ^0.1.2
+  like_button: ^1.0.4
   carousel_slider: ^2.3.1
   flutter:
     sdk: flutter
