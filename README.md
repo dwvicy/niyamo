@@ -50,7 +50,7 @@ It creates a brag list for people with imposter syndrome where they can put in t
 The initial setup of the app was a bit tedious, integrating the ideals and putting together everything. Once we were able to overcome the initial roadblocks, from then on it was pretty much a smooth sail.
 
 ## Accomplishments that I'm proud of
-Not having much experience in mobile app development, piecing together a working app within 24 hrs
+Not having much experience in mobile app development, piecing together a working app within 24 hrs.
 
 ## What's next for niyamo
 Scaling it to a larger scale, with added features such as multi - lingual support, etc.
