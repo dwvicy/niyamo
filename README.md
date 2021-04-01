@@ -4,7 +4,7 @@ An app for women in tech to overcome imposter syndrome and adopt a healthier lif
 
 [Link to app demo](https://youtu.be/nmhwWVbp_7M)
 
-HackViolet Hack
+
 
 ## What is imposter syndrome?
 Imposter syndrome (IS) is the “false and sometimes crippling belief that one’s successes are the product of luck or fraud rather than skill. Individuals who experience it may feel self-doubt and a lack of confidence in their own abilities.Interestingly, even people who are high achievers and extremely successful often fall victim to these feelings.
@@ -53,4 +53,19 @@ The initial setup of the app was a bit tedious, integrating the ideals and putti
 Not having much experience in mobile app development, piecing together a working app within 24 hrs.
 
 ## What's next for niyamo
-Scaling it to a larger scale, with added features such as multi - lingual support, etc.
+Scaling it to a larger scale, with added features such as multi - lingual support.  In future the app can be extended to address more issues and diseases like PCOS where we can add a symptom detector to detect it at an early stage.  Moreover the app can be extended to help other genders too. 
+
+## How to run  the project
+
+1. Click on clone or download. Copy the url of the Github project.
+
+2. Open Android Studio with flutter and dart plugins installed.
+
+3. On the welcome screen of Android Studio, click check out project from version control and select Git.Paste the URL of your project and select the desired directory location for your project. Then click clone button.
+
+4. Click the No button.Choose the existing project because it has been downloaded to the location selected. After finding the location, click OK.
+
+5. When the project is open in android studio, Click Get dependencies to install the packages or run the command: flutter pub get.
+
+6. Launch the application on the android emulator. 
+
